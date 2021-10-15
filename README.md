@@ -1,7 +1,7 @@
 # Lab2 - Laravel Blog with Docker
 
 Bill.Dou@itas.ca \
-Oct 1, 2021
+Oct 14, 2021
 
 ## Usage
 
@@ -34,4 +34,4 @@ http://localhost:8020/
 PHPMyAdmin: http://localhost:8021/\
 server:db\
 username: root\
-password:''
+password:
