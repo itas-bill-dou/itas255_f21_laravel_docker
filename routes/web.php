@@ -18,10 +18,6 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/blog', function () {
-    return view('blog');
-})->name('blog');
-
 Route::get('/welcome', function () {
     return view('welcome');
 });

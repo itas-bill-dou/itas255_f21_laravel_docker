@@ -1,30 +1,37 @@
-# Lab2 - Laravel Blog
+# Lab2 - Laravel Blog with Docker
 
 Bill.Dou@itas.ca \
 Oct 1, 2021
 
 ## Usage
 
-Download lab2 in your workspace
+Download lab2 repo
 ```
-git pull
+$ git clone https://github.com/itas-bill-dou/itas255_f21_laravel_docker.git
 ```
-Copy whole lab2 files into your local private repo: lab2
+Copy whole files into your local private repo: lab2
 
 ```
-cd lab2
-docker-composer up -d --build
+$ cd lab2
+$ docker-composer up --build
+```
+After all containers are created, get into `workspace` container and run the following commands:
+
+```
+$ cp .env.example .env
+$ php artisan key:generate
+$ php artisan storage:link
+$ npm install && npm run watch
 ```
 
-Then run the following command in workspace container
+### Website
 
-```
-cp .env.example .env
-php artisan key:generate
-npm install
-```
-
-Open http://localhost:8020/
+http://localhost:8020/
 
 
-Done.
+### PHPMyAdmin
+
+PHPMyAdmin: http://localhost:8021/\
+server:db\
+username: root\
+password:''
