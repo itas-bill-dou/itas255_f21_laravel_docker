@@ -14,7 +14,7 @@
     ITAS
     </a> <br>
     Bill.Dou@itas.ca<br>
-    Updated on Oct 18, 2021
+    Updated on Oct 16, 2021
     <br />
   </p>
 </div>
@@ -45,11 +45,13 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The lab
+## About The project
 
 ![xdebug screenshot][product-screenshot]
 
 This project presents a way to configure the Docker container and VSCode to enable Xdebug, all that in Windows.
+
+Note the repo branch is "xdebug" - https://github.com/itas-bill-dou/itas255_f21_laravel_docker/tree/xdebug
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
