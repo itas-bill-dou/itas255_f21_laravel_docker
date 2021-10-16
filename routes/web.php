@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/php', function () {
+    return view('php');
+});
+
 Route::get('/welcome', function () {
     return view('welcome');
 });

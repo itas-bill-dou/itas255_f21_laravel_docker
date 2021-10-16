@@ -11,8 +11,9 @@ services:
             - "8020:80"
         volumes:
             - ./:/var/www/html
+            - .docker/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
         networks:
-            - lab2-network
+            - laravel
         depends_on:
             - db
     db:
@@ -26,7 +27,7 @@ services:
             - ./.docker/db_data:/var/lib/mysql
             - ./.docker/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
         networks:
-            - lab2-network
+            - laravel
     composer:
         image: composer:latest
         container_name: composer
@@ -42,7 +43,6 @@ services:
         environment:
             - PMA_ARBITRARY=1
         networks:
-            - lab2-network
-
+            - laravel
 networks:
-    lab2-network:
+    laravel:
